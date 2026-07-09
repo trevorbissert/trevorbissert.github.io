@@ -1,0 +1,241 @@
+/* ---- Layout & typography ---- */
+
+main.content {
+  max-width: 42rem;
+}
+
+#quarto-margin-sidebar .toc-actions {
+  margin-bottom: 0.5rem;
+}
+
+#quarto-margin-sidebar .toc-section-number {
+  display: none;
+}
+
+/* Keep section TOC links visible (Quarto collapses them by default) */
+#TOC ul,
+#TOC ul.collapse,
+#quarto-margin-sidebar #TOC ul,
+#quarto-sidebar #TOC ul {
+  display: block !important;
+  visibility: visible !important;
+  height: auto !important;
+}
+
+#TOC .nav-link {
+  font-size: 0.95rem;
+  padding: 0.35rem 0;
+  color: #555;
+  text-decoration: none;
+  display: block;
+}
+
+#TOC .nav-link:hover {
+  color: #1f9bcf;
+}
+
+#TOC .nav-link.active {
+  color: #1f9bcf;
+  font-weight: 600;
+}
+
+h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid #e8ecef;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* ---- Project cards ---- */
+
+.project-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+  border-left: 4px solid #1f9bcf;
+}
+
+/* ---- EM9 sub-paradigms (Shopping Game, Zoo Game) ---- */
+
+.sub-projects {
+  margin: 1rem 0 0.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid #dee2e6;
+}
+
+.sub-project {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 0.85rem;
+  font-size: 0.88em;
+  line-height: 1.55;
+  color: #444;
+}
+
+.sub-project:last-child {
+  margin-bottom: 0;
+}
+
+.sub-project > p {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.sub-project img {
+  width: 100px;
+  height: auto;
+  border-radius: 0.3rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.sub-project-text h4 {
+  font-size: 0.95em;
+  font-weight: 600;
+  margin: 0 0 0.2rem;
+  color: #333;
+}
+
+.sub-project-text p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .sub-project {
+    gap: 0.6rem;
+  }
+
+  .sub-project img {
+    width: 80px;
+  }
+}
+
+.project-image {
+  flex-shrink: 0;
+}
+
+.project-image img {
+  width: 140px;
+  height: auto;
+  border-radius: 0.35rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-body {
+  flex: 1;
+}
+
+.project-body p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-image img {
+    width: 120px;
+  }
+}
+
+/* ---- Publications ---- */
+
+.pub-entry {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #e8ecef;
+}
+
+.pub-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.pub-entry p {
+  margin-bottom: 0.35rem;
+  color: #555;
+}
+
+.pub-entry .btn {
+  margin-top: 0.5rem;
+}
+
+/* ---- Contact page ---- */
+
+.contact-section {
+  margin-bottom: 2rem;
+}
+
+.contact-emails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05em;
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.contact-icon {
+  width: 72px;
+  height: auto;
+  margin-bottom: 0.75rem;
+}
+
+.contact-card a:not(.contact-icon) {
+  font-size: 0.9em;
+  margin-top: 0.25rem;
+}
+
+/* ---- About page polish ---- */
+
+.about-entity .about-contents {
+  line-height: 1.7;
+}
